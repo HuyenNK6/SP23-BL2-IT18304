@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_12_LIST_OOP", "BAI_12_L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_13_QLSACH", "BAI_13_QLSACH\BAI_13_QLSACH.csproj", "{C4583003-4D38-4D1B-A124-4F1B5DE17665}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_14_QLDH", "BAI_14_QLDH\BAI_14_QLDH.csproj", "{BB823028-CA66-4948-8F60-CF459F6DF68D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{C4583003-4D38-4D1B-A124-4F1B5DE17665}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4583003-4D38-4D1B-A124-4F1B5DE17665}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4583003-4D38-4D1B-A124-4F1B5DE17665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB823028-CA66-4948-8F60-CF459F6DF68D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB823028-CA66-4948-8F60-CF459F6DF68D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB823028-CA66-4948-8F60-CF459F6DF68D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB823028-CA66-4948-8F60-CF459F6DF68D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
