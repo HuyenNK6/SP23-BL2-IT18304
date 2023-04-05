@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_15_QLTS", "BAI_15_QLTS\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_16_Ke_Thua", "BAI_16_Ke_Thua\BAI_16_Ke_Thua.csproj", "{F24A2696-46ED-40EB-A034-A3C60CB22A9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_17_Xu_Ly_Chuoi", "BAI_17_Xu_Ly_Chuoi\BAI_17_Xu_Ly_Chuoi.csproj", "{B5329C69-CB63-4C46-AC80-5B56F5B58D57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{F24A2696-46ED-40EB-A034-A3C60CB22A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F24A2696-46ED-40EB-A034-A3C60CB22A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F24A2696-46ED-40EB-A034-A3C60CB22A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5329C69-CB63-4C46-AC80-5B56F5B58D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5329C69-CB63-4C46-AC80-5B56F5B58D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5329C69-CB63-4C46-AC80-5B56F5B58D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5329C69-CB63-4C46-AC80-5B56F5B58D57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
