@@ -125,9 +125,16 @@ namespace BAI_17_Xu_Ly_Chuoi
         static void Main(string[] args)
         {
             XuLyChuoi();
+            Console.WriteLine("Nhap ho va ten: ");
+            string hoVaTen = Console.ReadLine();
+            Console.WriteLine("Ten viet chuan: " + VietChuanHoTen(hoVaTen));
 
             string ten = KiemTraChu();
             Console.WriteLine("Xin chao "+ten);
+            int tuoi = KiemTraSo();
+            Console.WriteLine("Tuoi: "+ tuoi);
+            string sdt = KiemTraSoDT();
+            Console.WriteLine("SDT: "+ sdt);
         }
         static void XuLyChuoi()
         {
@@ -156,7 +163,6 @@ namespace BAI_17_Xu_Ly_Chuoi
                 Console.WriteLine(item);
             }
         }
-
         static string KiemTraChu()
         {
             string s;
@@ -164,8 +170,61 @@ namespace BAI_17_Xu_Ly_Chuoi
             {
                 Console.WriteLine("Nhap vao chu: ");
                 s = Console.ReadLine();
-            } while (!Regex.IsMatch(s,@"^[a-zA-Z ]+$"));
+            } while (!Regex.IsMatch(s,@"^[a-zA-Z\s]+$"));
             return s;
+        }
+        static int KiemTraSo()
+        {
+            string s;
+            do
+            {
+                Console.WriteLine("Nhap vao so: ");
+                s = Console.ReadLine();
+            } while (!Regex.IsMatch(s,@"^[0-9]+$"));
+            return Convert.ToInt32(s);
+        }
+        static string KiemTraSoDT()
+        {
+            string s;
+            do
+            {
+                Console.WriteLine("Nhap vao so dt: ");
+                s = Console.ReadLine();
+            } while (!Regex.IsMatch(s, @"^[0][0-9]{9}$"));
+            return s;
+        }
+        static double NhapSoDouble()
+        {
+            string number;
+            do
+            {
+                Console.WriteLine("Moi ban nhap so: ");
+                number = Console.ReadLine();
+            } while (!Regex.IsMatch(number, @"^[0-9]+\.?[0-9]*$")); ///  \d hoặc  [0-9]
+             //+: 1 hoặc nhiều ký tự
+            //[0-9]+: 1 hoặc nhiều ký tự số
+            // /.: ký tự dấu chấm
+            // /.: ký tự dấu chấm xuất hiện 0 hoặc 1 lần
+            // [0 - 9]*: 0 hoặc nhiều ký tự số
+
+            return Convert.ToDouble(number);
+        }
+        static string VietChuanHoTen(string name)
+        {
+            string[] arrName = name.Split(' ');//cắt chuỗi\
+            string nameVietHoa = "";
+            foreach (var item in arrName)
+            {
+                Console.WriteLine(item);
+                nameVietHoa += VietHoaChuCaiDau(item) + " ";
+            }
+            return nameVietHoa;
+
+        }
+        static string VietHoaChuCaiDau(string text)
+        {
+            string temp = text.ToLower();//viết thường
+            return temp.Substring(0, 1).ToUpper() + temp.Substring(1);
         }
     }
 }
